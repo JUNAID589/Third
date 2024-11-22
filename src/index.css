@@ -1,0 +1,922 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --yellow: #f0ad4e;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  background-image: url("./assets/bodybg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.flag {
+  height: 25px;
+  width: 40px;
+}
+
+::selection {
+  background-color: black;
+  color: var(--yellow);
+}
+@media (min-width: 320px) and (max-width: 410px) {
+  .welcome-to-crickostats {
+    font-size: 1.2rem !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 420px) {
+  .ball-gif-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ball-gif {
+    position: absolute !important;
+    margin-top: 80px;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
+  .ballbat-gif-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ballbat-gif {
+    position: absolute !important;
+    margin-top: 80px;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
+}
+@media (min-width: 420px) and (max-width: 576px) {
+  .ball-gif-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ball-gif {
+    margin-top: 100px;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
+  .ballbat-gif-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ballbat-gif {
+    margin-top: 100px;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
+}
+
+/* home css */
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* For col-devices */
+@media (min-width: 320px) and (max-width: 576px) {
+  .made-by-junaid {
+	background-color: #fff;
+	color: black;
+	position: fixed;
+	bottom: 500px;
+	top:360px;
+	right: -80px;
+	cursor: pointer;
+	font-size: 20px;
+	transform: rotate(90deg);
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 20px;
+	text-decoration: none;
+  }
+  .navbar-toggler {
+    background-color: white;
+    border: 3px solid green !important;
+    border-radius: 15px !important;
+  }
+  .navbar-brand {
+    background-color: rgb(0, 107, 43);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 4px;
+  }
+  .nav-link {
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0) !important;
+  }
+  .pak-buttons:hover {
+    background-color: green;
+  }
+  .welcome-to-crickostats {
+    background-color: #0f6737;
+    font-size: 1.7rem;
+  }
+  .banner {
+    height: 315px;
+    width: 315px;
+    border-radius: 20px;
+  }
+  .home-btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .card-players {
+    height: 400px;
+    width: 300px;
+  }
+
+  .players-img {
+    height: 200px;
+    width: 280px;
+    border-radius: 20px;
+  }
+
+  .legend-cricketer-stats {
+    font-size: 1.1rem;
+  }
+  .explore-from-countries {
+    font-size: 1.1rem;
+  }
+  .col-countries {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .card-countries {
+    height: 200px;
+    width: 250px;
+  }
+
+  .teamplayers-heading {
+    font-size: 1.2rem !important;
+  }
+  .flag {
+    height: 25px;
+    width: 40px;
+  }
+  .best-of-heading {
+    font-size: 1.3rem;
+    border-radius: 20px;
+  }
+  .players-video {
+    height: 200px;
+    width: 320px;
+  }
+
+  .profilepic {
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* for  col-sm-devices */
+@media (min-width: 576px) and (max-width: 768px) {
+	.made-by-junaid {
+		background-color: #fff;
+		color: black;
+		position: fixed;
+		bottom: 500px;
+		top:360px;
+		right: -80px;
+		cursor: pointer;
+		font-size: 20px;
+		transform: rotate(90deg);
+		height: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 20px;
+		text-decoration: none;
+	  }
+  .ball-gif-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ball-gif {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+  .ballbat-gif-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ballbat-gif {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+
+  /* -------------------------- */
+  .navbar-toggler {
+    background-color: white;
+    border: 3px solid green !important;
+    border-radius: 15px !important;
+  }
+  .navbar-brand {
+    background-color: rgb(0, 107, 43);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 4px;
+    font-size: 1.7rem;
+  }
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  .welcome-to-crickostats {
+    background-color: #0f6737;
+    font-size: 2rem;
+  }
+  .banner {
+    height: 315px;
+    width: 515px;
+    border-radius: 20px;
+  }
+  .legend-cricketer-stats {
+    font-size: 1.5rem;
+  }
+  .pak-buttons:hover {
+    background-color: green;
+  }
+
+  .home-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .card-players {
+    height: 400px;
+    width: 400px;
+  }
+  .players-img {
+    height: 300px;
+    width: 480px;
+    border-radius: 20px;
+    border-color: #f0ad4e;
+  }
+  .best-of-heading {
+    font-size: 1.5rem;
+    border-radius: 20px;
+  }
+  .players-video {
+    height: 300px;
+    width: 480px;
+  }
+
+  .explore-from-countries {
+    font-size: 1.5rem;
+  }
+
+  .card-countries {
+    height: 300px;
+    width: 480px;
+    border-radius: 20px;
+  }
+
+  .teamplayers-heading {
+    font-size: 1.2rem !important;
+  }
+  .profilepic {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* for  col-md-devices */
+@media (min-width: 768px) and (max-width: 992px) {
+	.made-by-junaid {
+		background-color: #fff;
+		color: black;
+		position: fixed;
+		bottom: 500px;
+		top:360px;
+		right: -80px;
+		cursor: pointer;
+		font-size: 20px;
+		transform: rotate(90deg);
+		height: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 20px;
+		text-decoration: none;
+	  }
+  .ball-gif-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ball-gif {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+  .ballbat-gif-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ballbat-gif {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+
+  /* -------------------------- */
+  .navbar-toggler {
+    background-color: white;
+    border: 3px solid green !important;
+    border-radius: 15px !important;
+  }
+  .navbar-toggler {
+    margin-right: 18px;
+  }
+
+  .navbar-brand {
+    background-color: rgb(0, 107, 43);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 4px;
+    font-size: 1.9rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  .welcome-to-crickostats {
+    background-color: #0f6737;
+    font-size: 2.5rem;
+  }
+  .banner {
+    height: 315px;
+    width: 715px;
+    border-radius: 20px;
+  }
+  .legend-cricketer-stats {
+    font-size: 2rem;
+  }
+  .card-players {
+    height: 400px;
+    width: 300px;
+  }
+  .players-img {
+    height: 300px;
+    width: 480px;
+    border-radius: 20px;
+  }
+
+  .home-btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .best-of-heading {
+    font-size: 2rem;
+    border-radius: 20px;
+  }
+  .players-video {
+    height: 300px;
+    width: 530px;
+    border-radius: 20px;
+  }
+
+  .explore-from-countries {
+    font-size: 2rem;
+    border-radius: 12px;
+  }
+
+  .card-countries {
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+  }
+
+  .teamplayers-heading {
+    font-size: 1.9rem;
+  }
+
+  .pak-buttons:hover {
+    background-color: green;
+  }
+  .profilepic {
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* for  lg-devices */
+@media (min-width: 992px) and (max-width: 1200px) {
+	.made-by-junaid {
+		background-color: #fff;
+		color: black;
+		position: fixed;
+		bottom: 500px;
+		top:360px;
+		right: -80px;
+		cursor: pointer;
+		font-size: 20px;
+		transform: rotate(90deg);
+		height: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 20px;
+		text-decoration: none;
+	  }
+  .ball-gif-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ball-gif {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+  .ballbat-gif-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ballbat-gif {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+
+  /* -------------------------- */
+  .navbar-brand {
+    background-color: rgb(0, 107, 43);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 4px;
+    font-size: 1.9rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  .nav-link:hover {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+  }
+
+  .welcome-to-crickostats {
+    background-color: #0f6737;
+    font-size: 3rem;
+  }
+  .banner {
+    height: 415px;
+    width: 900px;
+    border-radius: 20px;
+  }
+  .legend-cricketer-stats {
+    font-size: 2rem;
+  }
+  .card-players {
+    height: 400px;
+    width: 300px;
+  }
+  .players-img {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+  }
+
+  .home-btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .best-of-heading {
+    font-size: 2rem;
+    border-radius: 20px;
+  }
+  .players-video {
+    height: 300px;
+    width: 530px;
+    border-radius: 20px;
+  }
+
+  .explore-from-countries {
+    font-size: 2rem;
+    border-radius: 12px;
+  }
+
+  .card-countries {
+    height: 300px;
+    width: 220px;
+    border-radius: 20px;
+  }
+
+  .teamplayers-heading {
+    font-size: 1.9rem;
+  }
+
+  .pak-buttons:hover {
+    background-color: green;
+  }
+
+  .card {
+    transition: transform 0.8s ease; /* Smooth transition */
+  }
+  .card:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+  }
+
+  .card-players:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+  }
+  .card-players {
+    transition: transform 0.8s ease; /* Smooth transition */
+  }
+
+  .players-img:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+    transition: transform 0.8s ease; /* Smooth transition */
+  }
+  /* buttons css teamplayers */
+  .pak-buttons:hover {
+    background-color: green;
+  }
+  .ind-buttons:hover {
+    background-color: #0056a9;
+  }
+  .aus-buttons:hover {
+    background-color: #f0ad4e;
+    color: black;
+  }
+  .eng-buttons:hover {
+    background-color: #0056a9;
+  }
+  .nz-buttons:hover {
+    background-color: #0056a9;
+  }
+  .sl-buttons:hover {
+    background-color: #0056a9;
+  }
+  .wi-buttons:hover {
+    background-color: #d50000;
+  }
+  /* buttons css teamplayers */
+
+  .profilepic {
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* for  xl-devices */
+@media (min-width: 1200px) and (max-width: 1400px) {
+	.made-by-junaid {
+		background-color: #fff;
+		color: black;
+		position: fixed;
+		bottom: 500px;
+		top:360px;
+		right: -80px;
+		cursor: pointer;
+		font-size: 20px;
+		transform: rotate(90deg);
+		height: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 20px;
+		text-decoration: none;
+	  }
+  .ball-gif-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ball-gif {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+  .ballbat-gif-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ballbat-gif {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+
+  /* -------------------------- */
+  .navbar-brand {
+    background-color: rgb(0, 107, 43);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 4px;
+    font-size: 1.9rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  .nav-link:hover {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    transform: scale(1.1);
+    transition: transform 0.8s ease;
+  }
+  .welcome-to-crickostats {
+    background-color: #0f6737;
+    font-size: 3.4rem;
+  }
+  .banner {
+    height: 415px;
+    width: 1200px;
+    border-radius: 20px;
+  }
+  .legend-cricketer-stats {
+    font-size: 3rem;
+  }
+  .card-players {
+    height: 400px;
+    width: 300px;
+  }
+  .players-img {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+  }
+
+  .home-btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .best-of-heading {
+    font-size: 2rem;
+    border-radius: 20px;
+  }
+  .players-video {
+    height: 300px;
+    width: 530px;
+    border-radius: 20px;
+  }
+
+  .explore-from-countries {
+    font-size: 2rem;
+    border-radius: 12px;
+  }
+
+  .card-countries {
+    height: 300px;
+    width: 220px;
+    border-radius: 20px;
+  }
+
+  .teamplayers-heading {
+    font-size: 1.9rem;
+  }
+
+  .pak-buttons:hover {
+    background-color: green;
+  }
+
+  .card {
+    transition: transform 0.8s ease; /* Smooth transition */
+  }
+  .card:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+  }
+
+  .card-players:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+  }
+  .card-players {
+    transition: transform 0.8s ease; /* Smooth transition */
+  }
+
+  .players-img:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+    transition: transform 0.8s ease; /* Smooth transition */
+  }
+  /* buttons css teamplayers */
+  .pak-buttons:hover {
+    background-color: green;
+  }
+  .ind-buttons:hover {
+    background-color: #0056a9;
+  }
+  .aus-buttons:hover {
+    background-color: #f0ad4e;
+    color: black;
+  }
+  .eng-buttons:hover {
+    background-color: #0056a9;
+  }
+  .nz-buttons:hover {
+    background-color: #0056a9;
+  }
+  .sl-buttons:hover {
+    background-color: #0056a9;
+  }
+  .wi-buttons:hover {
+    background-color: #d50000;
+  }
+  /* buttons css teamplayers */
+  .profilepic {
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* for  xxl-devices */
+@media (min-width: 1400px) {
+	.made-by-junaid {
+		background-color: #fff;
+		color: black;
+		position: fixed;
+		bottom: 500px;
+		top:440px;
+		right: -77px;
+		cursor: pointer;
+		font-size: 20px;
+		transform: rotate(90deg);
+		height: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 20px;
+		text-decoration: none;
+	  }
+  .ball-gif-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ball-gif {
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+  }
+  .ballbat-gif-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ballbat-gif {
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+  }
+
+  /* -------------------------- */
+  /* --------nav css */
+  .navbar-brand {
+    background-color: rgb(0, 107, 43);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 4px;
+    font-size: 1.9rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  .nav-link:hover {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+  }
+  /* --------nav css ends */
+
+  .welcome-to-crickostats {
+    background-color: #0f6737;
+    font-size: 3.5rem;
+  }
+  .banner {
+    border-radius: 20px;
+    width: 1400px;
+    height: 600px;
+  }
+  .legend-cricketer-stats {
+    font-size: 3rem;
+  }
+  .card-players {
+    height: 400px;
+    width: 300px;
+  }
+  .players-img {
+    height: 300px;
+    width: 410px;
+    border-radius: 20px;
+  }
+
+  .home-btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .best-of-heading {
+    font-size: 2.5rem;
+    border-radius: 20px;
+  }
+  .players-video {
+    height: 300px;
+    width: 530px;
+    border-radius: 20px;
+  }
+
+  .explore-from-countries {
+    font-size: 3rem;
+    border-radius: 12px;
+  }
+
+  .card-countries {
+    height: 300px;
+    width: 310px;
+    border-radius: 20px;
+  }
+
+  .teamplayers-heading {
+    font-size: 1.9rem;
+  }
+  /* buttons css teamplayers */
+  .pak-buttons:hover {
+    background-color: green;
+  }
+  .ind-buttons:hover {
+    background-color: #0056a9;
+  }
+  .aus-buttons:hover {
+    background-color: #f0ad4e;
+    color: black;
+  }
+  .eng-buttons:hover {
+    background-color: #0056a9;
+  }
+  .nz-buttons:hover {
+    background-color: #0056a9;
+  }
+  .sl-buttons:hover {
+    background-color: #0056a9;
+  }
+  .wi-buttons:hover {
+    background-color: #d50000;
+  }
+  /* buttons css teamplayers */
+  .card {
+    transition: transform 0.8s ease; /* Smooth transition */
+  }
+  .card:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+  }
+
+  .card-players:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+  }
+  .card-players {
+    transition: transform 0.8s ease; /* Smooth transition */
+  }
+
+  .players-img:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+    transition: transform 0.8s ease; /* Smooth transition */
+  }
+
+  .profilepic {
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
